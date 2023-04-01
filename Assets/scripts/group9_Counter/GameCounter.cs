@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // 카운터 본체
 public class GameCounter : MonoBehaviour
@@ -14,4 +15,5 @@ public class GameCounter : MonoBehaviour
     { 
         value = startCount;// 카운터를 리셋
     }
+    
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // 키를 누르면 이동한다(중력 대응판) 
 public class OnKeyPress_MoveGravity : MonoBehaviour
@@ -60,7 +61,7 @@ public class OnKeyPress_MoveGravity : MonoBehaviour
             jumpFlag = false;
             rbody.AddForce(new Vector2(0, jumppower), ForceMode2D.Impulse);
         }
-        if (gravity.value < -10)
+        if (this.transform.position.y <-5)
             {
                 // 씬을 전환한다 
                 SceneManager.LoadScene(sceneName);

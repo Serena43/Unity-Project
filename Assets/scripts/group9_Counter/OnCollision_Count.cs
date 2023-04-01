@@ -15,7 +15,7 @@ public class OnCollision_Count : MonoBehaviour
 		if (collision.gameObject.name == targetObjectName)
 		{
 			// 카운터 값을 증가한다 
-			GameCounter.value = GameCounter.value + addValue;
+			GameCounter.value = GameCounter.value -3;
 		}
 	}
 }
